@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1> Plan Your Next Event! </h1>
+    <div class="container">
 
+
+        <div class="input-group">
+            <label for="event">Select your next event:</label>
+            <select id="event">
+                <option value="" disabled selected>Select an event </option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="new-item">Add an item to your checklist:</label>
+            <input type="text" id="new-item" placeholder="e.g..." required>
+            <button id="add-btn">Add to Checklist</button>
+        </div>
+
+        <ul class="checklist" id="checklist"></ul>
+        <div class="suggestions" id="suggestions"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to remove this item?</p>
+            <button id="confirm-btn">Yes</button>
+            <button id="cancel-btn">No</button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
