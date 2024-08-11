@@ -1,5 +1,5 @@
-<h1 align="center"> Plan Your Next Event! </h1>
-<h3 align="center"> Don't forget anythin </h3>
+<h1 align="center"> Project Name: "Plan Your Next Event!" </h1>
+<h3 align="center"> Don't forget anything </h3>
 
 ## Introduction
 
