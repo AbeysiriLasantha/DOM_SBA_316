@@ -50,6 +50,11 @@ function getSuggestionsById(eventId) {
 // Function to add a new item to the checklist
 function addItem() {
     const itemText = newItemInput.value.trim();
+    //Validate the whether the text is not blank
+    if (itemText === '') {
+        alert('Please enter an item.');
+        return;
+    }
 
     const li = document.createElement('li');
     li.textContent = itemText;
@@ -62,7 +67,9 @@ function addItem() {
     li.appendChild(removeBtn);
 
     checklist.appendChild(li);
-
+    //Confirm message to the user 
+    alert(`${itemText} has been added to your checklist.`);
+    newItemInput.value = '';
 }
 
 // Function to toggle item completion
